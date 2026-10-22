@@ -1,189 +1,458 @@
-
 .. raw:: latex
 
-    \pagestyle{plain}
-    \thispagestyle{plain}
-    %% Suppress all TOC entries for the overview chapter (sections, subsections,
-    %% Copyright addcontentsline) — restored just before \sphinxtableofcontents
-    %% so chapters from Introduction onward appear in the TOC normally.
-    \let\osiaorigaddcontentsline\addcontentsline
-    \renewcommand{\addcontentsline}[3]{}
+   \pagestyle{plain}
+   \thispagestyle{plain}
 
-.. _chapter-overview:
+.. _wg-charter:
+
+FG-TIDA WG<n>: <Full name of the Working Group> (<ACRONYM>)
+=============================================================
 
 .. only:: html
 
-    .. admonition:: This is a document template
-        :class: tip
+   .. admonition:: Author Guidance
+      :class: tip
 
-        Replace the ``<placeholders>`` and the *lorem ipsum* text throughout with
-        your own content. This landing page is the document's front matter:
+      This document is an FG-TIDA Working Group Charter template.
 
-        * **Abstract**, **History**, **Authors**, **Keywords** and **Foreword**
-          are standard front-matter sections — keep them and fill them in.
-        * **Chapters 1–4** demonstrate the authoring system (text, figures,
-          tables, diagrams, and API references). Read them, then replace their
-          content with your specification.
+      Replace all text enclosed in ``<...>``.
 
-        This notice appears on the web version only; it is excluded from the
-        published PDF. See the project ``HOWTO`` for how to build and publish.
+      Guidance contained in source comments is intended for charter authors
+      and does not appear in the published HTML or PDF.
 
-Title of this document
-========================
+      Keep the final charter short: approximately 600–1,200 words.
 
-.. only:: html
 
-    **<subtitle of this document>**
-
-.. raw:: latex
-
-    \begin{center}\textbf{<subtitle of this document>}\end{center}
-
-Abstract
---------
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
-
-History
--------
+Charter Information
+-------------------
 
 .. list-table::
-    :header-rows: 1
-    :widths: 10 26 18 14 32
+   :header-rows: 0
+   :widths: 30 70
 
-    * - Version
-      - Document
-      - Approval
-      - Focus Group
-      - Working Group
-    * - <version>
-      - <title>
-      - <date>
-      - TIDA
-      - <acronym>
+   * - **Charter version**
+     - <v0.x>
 
-To access this Document as a PDF, open the published documentation site in your web
-browser and click the PDF download link, or navigate directly to
-https://debora-com.github.io/CUTEspecs/specification.pdf.
+   * - **Date**
+     - <YYYY-MM-DD>
 
-Authors
--------
+   * - **Status**
+     - <Draft / Under review / Approved by FG-TIDA on YYYY-MM-DD>
+
+
+1. Group Information
+--------------------
+
+..
+   MANDATORY
+
+   AUTHOR GUIDANCE:
+
+   Include names and affiliations only in this section.
+
+   Provide the exact repository and issue-tracker link.
+
+   Do not include biographies, honorary titles, or persons who have not
+   agreed to serve.
 
 .. list-table::
-    :header-rows: 1
-    :widths: 30 40 30
+   :header-rows: 1
+   :widths: 38 62
 
-    * - Name
-      - Affiliation
-      - Contact
-    * - <Jane Doe>
-      - <Organization / Company>
-      - <jane.doe@example.com>
-    * - <John Smith>
-      - <Organization / Company>
-      - <john.smith@example.com>
+   * - Field
+     - Content
 
-Keywords
+   * - Working group name and acronym
+     - <Full name> (<ACRONYM>)
+
+   * - FG-TIDA theme(s) covered
+     - <Theme(s) from the FG-TIDA Terms of Reference>
+
+   * - Chair(s) / co-chairs
+     - <Name, affiliation>
+
+   * - Editor(s) of the main deliverables
+     - <Name, affiliation, if known>
+
+   * - Mailing list
+     - <Mailing list>
+
+   * - Repository and issue tracker
+     - <GitHub repository URL>
+
+   * - Charter status and version
+     - <Status and version>
+
+
+2. Background and Problem Statement
+-----------------------------------
+
+..
+   MANDATORY
+
+   AUTHOR GUIDANCE:
+
+   Write two to four short paragraphs, or a concise numbered list.
+
+   State:
+
+   - what the problem is;
+   - who has the problem: people, organizations, AI agents, systems, etc.;
+   - why existing work does not adequately solve it;
+   - any essential terms needed to understand the rest of the charter.
+
+   Define only essential terms here.
+
+   Do not include:
+
+   - a history of the topic;
+   - a literature review;
+   - a proposed solution;
+   - claims about a particular vendor or product;
+   - undefined buzzwords.
+
+<Describe the background and problem here.>
+
+
+3. Goals
 --------
 
-Lorem, ipsum, dolor, consectetur, adipiscing.
+..
+   MANDATORY
 
-.. raw:: latex
+   AUTHOR GUIDANCE:
 
-    \newpage
-    \osiacenternextsection
+   State what the Working Group will produce and why.
 
-Foreword
---------
+   Keep this section to approximately three to six sentences or bullets.
 
-Agentic AI systems now act as autonomous entities capable of reasoning, planning, and
-executing tasks across services, infrastructures, and organizational boundaries. This
-fundamentally changes the nature of identity in digital systems: identity is no longer
-limited to human users and static machine instances but must also encompass autonomous,
-dynamic, and goal-oriented agents. And identity alone is insufficient — the core question
-extends beyond "what an entity is" to "whether, and under what conditions, that entity
-should be trusted to act".
+   Make clear whether the WG will:
 
-The Focus Group on Trust and Identity for humans and agentic AI (FG-TIDA) addresses trust
-management and interoperable digital identity infrastructure for humans and for agentic AI,
-supporting the development of secure, trustworthy digital ecosystems in which humans and
-agentic AI can safely interact and collaborate.
+   - describe: use cases, terminology, gap analysis;
+   - specify: formats, interfaces, protocols;
+   - recommend: guidelines, principles or best practices.
 
-FG-TIDA was established under Recommendation ITU-T A.7 (Focus groups: Establishment and
-working procedures), with ITU-T Study Group 17 as its parent group. Further details are
-available in the group's terms of reference.
+   The WG should build on relevant existing standards and specifications
+   where possible.
 
-For more news and updates about the TIDA Community, including its supporter organizations,
-please refer to the community's published resources.
+   Do not use open-ended language such as "and any other related topics".
 
-.. raw:: latex
+   Do not claim authority reserved for ITU-T Study Groups, such as approving
+   ITU-T Recommendations.
 
-    \osiacenternextsection
+* The Working Group will <goal 1>.
 
-Note
-----
+* The Working Group will <goal 2>.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+* The Working Group will <goal 3>.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
-voluptatem accusantium doloremque laudantium.
 
-.. Intellectual Property Rights — section commented out. To restore it, remove the
-   leading ".." and the indentation below, and re-add a ".. raw:: latex" block with
-   "\osiacenternextsection" before the heading (to centre it on the PDF).
+4. Scope and Non-Goals
+----------------------
 
-   Intellectual Property Rights
-   ----------------------------
+In Scope
+~~~~~~~~
 
-   ITU draws attention to the possibility that the practice or implementation of this
-   Recommendation may involve the use of a claimed Intellectual Property Right. ITU takes no
-   position concerning the evidence, validity or applicability of claimed Intellectual Property
-   Rights, whether asserted by ITU members or others outside of the Recommendation development
-   process.
+..
+   MANDATORY
 
-   As of the date of approval of this Recommendation, ITU had not received notice of intellectual
-   property, protected by patents/software copyrights, which may be required to implement this
-   Recommendation. However, implementers are cautioned that this may not represent the latest
-   information and are therefore strongly urged to consult the appropriate ITU-T databases
-   available via the ITU-T website at http://www.itu.int/ITU-T/ipr/.
-   Implementers should also be aware that the organization that originated the technically
-   equivalent document listed in the Bibliography may have received notices of intellectual
-   property required for the implementation of this Recommendation.
+   AUTHOR GUIDANCE:
 
-.. raw:: latex
+   Identify clearly what work belongs to this Working Group.
 
-    %% Copyright notice commented out. To restore, uncomment the lines below.
-    %% \vspace{4em}
-    %% \begin{center}\textcopyright{} ITU 2024\end{center}
-    %%
-    %% \medskip
-    %% All rights reserved. No part of this publication may be reproduced, by any means whatsoever, without the
-    %% prior written permission of ITU.
+* <In-scope item 1>
 
-    %% Restore \addcontentsline so the TOC below (and Chapter 1 onward) populate.
-    \let\addcontentsline\osiaorigaddcontentsline
-    \sphinxtableofcontents
-    \osiamainmatter
+* <In-scope item 2>
 
-.. toctree::
-    :maxdepth: 3
-    :numbered:
-    :hidden:
+* <In-scope item 3>
 
-    chapters/01_chapter1
-    chapters/02_chapter2
-    chapters/03_chapter3
-    chapters/04_chapter4/index
-    chapters/05_annex/index
-    chapters/06_appendix/index
-    chapters/07_references
+
+Out of Scope / Non-Goals
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+..
+   MANDATORY
+
+   AUTHOR GUIDANCE:
+
+   Explicitly identify what the WG will NOT do.
+
+   This section is important for preventing scope creep.
+
+   Where a neighbouring topic belongs to another FG-TIDA WG, an SG17
+   Question, or another organization, identify that relationship.
+
+   Avoid defining the same deliverable under more than one WG.
+
+* The Working Group will not <non-goal 1>.
+
+* The Working Group will not <non-goal 2>.
+
+* <Topic> is outside this WG's scope and is addressed by <WG / SG17 Question /
+  external organization>.
+
+
+5. Programme of Work and Deliverables
+-------------------------------------
+
+..
+   MANDATORY
+
+   AUTHOR GUIDANCE:
+
+   Identify concrete documents the WG intends to produce.
+
+   Every deliverable should have:
+
+   - a clear title;
+   - an output type;
+   - a short description;
+   - relevant input documents, where applicable.
+
+   Suggested FG-TIDA output types:
+
+   [UC]
+      Use-case document.
+
+   [TR]
+      Technical report.
+
+   [TS]
+      Technical specification.
+
+   [GL]
+      Guideline.
+
+   [IN]
+      Input to ITU-T SG17.
+
+   Existing contributions or draft documents should be identified as inputs,
+   not automatically treated as adopted WG text.
+
+   Avoid open-ended deliverables such as "ongoing analysis".
+
+.. list-table::
+   :header-rows: 1
+   :widths: 6 24 15 35 20
+
+   * - #
+     - Deliverable
+     - Output type
+     - Short description
+     - Input documents
+
+   * - 1
+     - <Deliverable 1>
+     - <[UC] / [TR] / [TS] / [GL] / [IN]>
+     - <Description>
+     - <Input, if any>
+
+   * - 2
+     - <Deliverable 2>
+     - <Output type>
+     - <Description>
+     - <Input, if any>
+
+
+6. Milestones
+-------------
+
+..
+   MANDATORY
+
+   AUTHOR GUIDANCE:
+
+   Define dated, checkable milestones aligned with the FG-TIDA meeting
+   calendar.
+
+   Typical milestones include:
+
+   - first draft available;
+   - WG agreement;
+   - submission to the FG-TIDA plenary.
+
+   Keep dates realistic.
+
+   Milestones may be updated without rechartering when the scope itself has
+   not changed.
+
+   Do not set dates beyond the lifetime of the Focus Group.
+
+.. list-table::
+   :header-rows: 1
+   :widths: 30 70
+
+   * - Target date
+     - Milestone
+
+   * - <Meeting / YYYY-MM>
+     - First draft of <deliverable 1> available in the repository.
+
+   * - <Meeting / YYYY-MM>
+     - <Deliverable 1> agreed by the Working Group.
+
+   * - <Meeting / YYYY-MM>
+     - <Deliverable 1> submitted to the FG-TIDA plenary.
+
+
+7. Coordination, Dependencies and Liaisons
+------------------------------------------
+
+..
+   MANDATORY
+
+   AUTHOR GUIDANCE:
+
+   Identify only organizations or groups with a real dependency.
+
+   Include, where relevant:
+
+   - other FG-TIDA Working Groups;
+   - ITU-T SG17 Questions;
+   - other ITU-T groups;
+   - external standards-development organizations;
+   - industry or research communities.
+
+   State briefly what the coordination concerns.
+
+   Do not imply that a formal liaison or agreement exists unless one has
+   actually been established.
+
+.. list-table::
+   :header-rows: 1
+   :widths: 35 65
+
+   * - Group / Organization
+     - Coordination or dependency
+
+   * - <FG-TIDA WG / SG17 Question / organization>
+     - <Describe the relationship>
+
+   * - <Organization>
+     - <Describe the relationship>
+
+
+8. Terminology
+--------------
+
+..
+   OPTIONAL
+
+   AUTHOR GUIDANCE:
+
+   Include this section only where WG-specific terminology is needed.
+
+   Prefer a reference to FG-TIDA terminology work.
+
+   Limit this section to approximately three to five terms.
+
+   Do not create a complete glossary here.
+
+The Working Group will use the common FG-TIDA terminology where applicable.
+
+.. list-table::
+   :header-rows: 1
+   :widths: 30 70
+
+   * - Term
+     - Meaning
+
+   * - <Term>
+     - <Definition>
+
+
+9. Working Methods
+------------------
+
+..
+   OPTIONAL
+
+   AUTHOR GUIDANCE:
+
+   Include only working practices that differ from the general FG-TIDA
+   working methods.
+
+   Examples include:
+
+   - how GitHub issues are used;
+   - how draft documents are adopted;
+   - special interim calls.
+
+   Do not repeat ITU-T or FG-TIDA general procedural rules.
+
+<Describe any WG-specific working methods, or delete this section if none.>
+
+
+10. Security, Privacy and Human-Rights Considerations
+-----------------------------------------------------
+
+..
+   OPTIONAL - RECOMMENDED
+
+   AUTHOR GUIDANCE:
+
+   Provide a short paragraph identifying the security, privacy and
+   human-rights concerns that the WG's deliverables must consider.
+
+   Examples may include:
+
+   - impersonation;
+   - unauthorized delegation;
+   - linkability;
+   - surveillance;
+   - misuse of identity information;
+   - loss of human control;
+   - accountability for agent actions.
+
+   Avoid generic disclaimers.
+
+<Describe the relevant security, privacy and human-rights considerations.>
+
+
+11. Success Criteria and Conclusion
+-----------------------------------
+
+..
+   OPTIONAL
+
+   AUTHOR GUIDANCE:
+
+   State how the WG will know its chartered work is complete.
+
+   Examples include:
+
+   - all deliverables submitted to the FG-TIDA plenary;
+   - findings transferred to the relevant SG17 Question;
+   - no remaining chartered deliverables.
+
+   Do not describe future approval by SG17 as guaranteed.
+
+The Working Group will have completed its chartered work when
+<success criterion>.
+
+Following completion, <describe the expected next step, if applicable>.
+
+
+12. Revision History
+--------------------
+
+..
+   MANDATORY
+
+   AUTHOR GUIDANCE:
+
+   Update this table whenever the scope or charter text changes.
+
+   Changes to milestones alone may be managed separately where appropriate.
+
+.. list-table::
+   :header-rows: 1
+   :widths: 18 22 60
+
+   * - Version
+     - Date
+     - Change
+
+   * - 0.1
+     - <YYYY-MM-DD>
+     - First draft
