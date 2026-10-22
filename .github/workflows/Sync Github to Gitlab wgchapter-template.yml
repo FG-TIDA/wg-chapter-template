@@ -38,7 +38,7 @@ jobs:
           GITLAB_REPO_URL: ${{ secrets.GITLAB_REPO_URL_WGCHAPTERTEMPLATE }}
         run: |
           if [ -z "$GITLAB_TOKEN" ]; then
-            echo "ERROR: GITLAB_TOKEN is not configured."
+            echo "ERROR: GITLAB_TOKEN_WG_CHAPTER is not configured."
             exit 1
           fi
 
@@ -47,7 +47,7 @@ jobs:
             exit 1
           fi
 
-          echo "GitLab repository URL is configured."
+          echo "GitLab configuration is present."
 
       - name: Add GitLab remote
         env:
@@ -57,7 +57,7 @@ jobs:
           GITLAB_HOST="${GITLAB_REPO_URL#https://}"
 
           git remote add gitlab \
-            "https://oauth2:${GITLAB_TOKEN_WG_CHAPTER}@${GITLAB_HOST}"
+            "https://oauth2:${GITLAB_TOKEN}@${GITLAB_HOST}"
 
           echo "GitLab remote configured."
 
