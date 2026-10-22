@@ -6,6 +6,37 @@ See the template live:
 📄 [Web page](https://fg-tida.github.io/wg-charter-template/)
 · 📑 [PDF](https://fg-tida.github.io/wg-charter-template/wg-charter.pdf)
 
+The pages you see there are produced by this repository — they double as the
+template's documentation, explaining and demonstrating how to write a wg charter.
+
+> **Starting a new charter?** Follow
+> **[WG-ONBOARDING.md](WG-ONBOARDING.md)**. Once your repo is created, replace
+> the text of this README with a short description of *your* specification
+> (what it is, its status, and a link to its published site).
+
+---
+
+A specification for the FG-TIDA working groups, authored with the shared TIDA wg charter
+template: one source that builds a modern web page and a print-ready PDF, with
+support for diagrams and auto-generated API references.
+
+## Quick start
+
+1. Click **Use this template → Create a new repository** (owner `FG-TIDA`, name
+   `FG-TIDA WG<n>: <Full name of the working group> (<ACRONYM>)`).
+2. In the new repo: **Settings → Pages → Source: GitHub Actions**.
+3. Edit the content under `src/doc/` — replace the `<placeholders>` and the
+   example text. Full instructions are in **[WG-ONBOARDING.md](WG-ONBOARDING.md)**.
+4. Push to `main`. The site and PDF publish automatically to
+   `https://fg-tida.github.io/<repo-name>/`.
+
+## In this repository
+
+- `src/doc/index.rst` — the document details.
+- `HOWTO.md` — how to build and preview locally, and how to customise.
+- `WG-ONBOARDING.md` — the full step-by-step guide for authors to create charters.
+
+
 This repository is the official template for drafting and publishing FG-TIDA Working Group Charters.
 
 This template is for the charters of the FG-TIDA working groups. It is modelled on the charters of approved IETF working groups, adapted to an ITU-T Focus Group.
