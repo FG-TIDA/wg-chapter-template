@@ -73,12 +73,8 @@ Charter version: <v0.x> — <date> — <status: draft / under review / approved 
 ### 4. Scope and non-goals [Mandatory]
 
 **In scope**
-- <item>
-
-**Out of scope (non-goals)**
-- <item>
-
-*Guidance — write:* an explicit list of what the group will **not** do. This is the section the IETF charters rely on most to prevent scope creep (WIMSE lists four things it "will not define"; SCITT has a separate "Non-Goals" section). Name the neighbouring topics that belong to other FG-TIDA working groups, to SG17 Questions, or to other organisations.
+- <item>**Out of scope (non-goals)**
+- <item>*Guidance — write:* an explicit list of what the group will **not** do. This is the section the IETF charters rely on most to prevent scope creep (WIMSE lists four things it "will not define"; SCITT has a separate "Non-Goals" section). Name the neighbouring topics that belong to other FG-TIDA working groups, to SG17 Questions, or to other organisations.
 *Do not write:* a non-goal that is in fact a goal of a sister FG-TIDA working group without saying which one; or a scope so wide that two working groups could both claim the same deliverable.
 
 ### 5. Programme of work and deliverables [Mandatory]
