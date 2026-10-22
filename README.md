@@ -2,6 +2,14 @@
 
 *Version 1.0 — 21 October 2026. Draft for discussion with the FG-TIDA management.*
 
+# FG-TIDA Working Group Charter Template
+
+See the template live:
+📄 [Web page](https://fg-tida.github.io/wg-charter-template/)
+· 📑 [PDF](https://fg-tida.github.io/wg-charter-template/wg-charter.pdf)
+
+This repository is the official template for drafting and publishing FG-TIDA Working Group Charters.
+
 This template is for the charters of the FG-TIDA working groups. It is modelled on the charters of approved IETF working groups, adapted to an ITU-T Focus Group.
 
 ## How to use this template
