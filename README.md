@@ -1,8 +1,6 @@
-# FG-TIDA Working Group Chapter — Template
+# FG-TIDA Working Group Charter Template
 
 *Version 1.0 — 21 October 2026. Draft for discussion with the FG-TIDA management.*
-
-# FG-TIDA Working Group Charter Template
 
 See the template live:
 📄 [Web page](https://fg-tida.github.io/wg-charter-template/)
